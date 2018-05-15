@@ -1,3 +1,6 @@
+/**
+ * snappy decompressor. compatible to xerial snappy
+ */
 package main
 
 import (
@@ -30,5 +33,7 @@ func main() {
 		} else {
 			os.Stdout.Write(outputBuffer)
 		}
+	} else {
+		log.Println("usage unsnappy source.snappy target.log")
 	}
 }
